@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тбилиси</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="scriptsheet" href="script.js">
+</head>
+<body>
+
+<!-- Главное меню навигации -->
+<header>
+    <h1>Тбилиси: столица Грузии с уникальной историей и культурой</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="posts.html">Посты</a></li>
+            <li><a href="about.html">Обо мне</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <nav id="city-links">
+    <ul>
+        <li><a href="details-tokyo.html">Токио</a></li>
+        <li><a href="details-mexico.html">Мехико</a></li>
+        <li><a href="details-dagestan.html">Дагестан</a></li>
+        <li><a href="details-barcelona.html">Барселона</a></li>
+        <li><a href="details-norway.html">Норвегия</a></li>
+        <li><a href="details-paris.html">Париж</a></li>
+        <li><a href="details-prague.html">Прага</a></li>
+    </ul>
+</nav>
+    <div id="google_translate_element"></div>
+</header>
+<section id="tbilisi-introduction">
+    <p><strong>Тбилиси</strong> — город, который приветствует гостей не только своими древними улочками и историческими
+        достопримечательностями, но и вкусными воспоминаниями от кулинарных приключений. В моем последнем путешествии я
+        отправился в поисках настоящей грузинской кухни и нашел ее в самых живописных местах.
+    </p>
+    <ul>
+        <h5><li><a href="#section1">Пешая прогулка по улицам</a></li>
+            <li><a href="#section2">Лучшие блюда Тбилиси</a></li>
+            <li><a href="#section3">Впечатления и советы</a></li>
+    </ul>
+</section>
+
+<div class="carousel-container">
+    <div class="carousel-images">
+        <img src="images/details-tbilisi%20(1).jpg" alt="Photo1"/>
+        <img src="images/details-tbilisi%20(2).jpg" alt="Photo2"/>
+        <img src="images/details-tbilisi%20(3).jpg" alt="Photo3"/>
+        <img src="images/details-tbilisi%20(4).jpg" alt="Photo4"/>
+        <img src="images/details-tbilisi%20(5).jpg" alt="Photo5"/>
+    </div>
+</div>
+
+    <h3 id="section1">Пешая прогулка по улицам</h3>
+    <p>Начало моего кулинарного приключения было на площади Руставели. Здесь каждый шаг сулит новые открытия. Я обошел
+        узкие улочки, заполненные ресторанчиками и магазинчики, останавливаясь перед небольшими кафе.</p>
+
+    <h3 id="section2">Лучшие блюда Тбилиси</h3>
+    <ul>
+       <li> <strong>Мачапули (говядина с картофелем) в "Gvishiani Gastrobar"</strong>
+        <br>- В одном из узких переулков я нашел небольшой ресторанчик с табличкой "Gvishiani Gastrobar". Мастер Геворк
+        приготовил для меня лучший мачапули, которое было невероятно вкусным и сочным. Каждая порция была свежей и
+        пропитанной ароматом специй.</li>
+
+        <li> <strong>Лобио (грибное рагу) в "Tbilisi Street Food"</strong>
+        <br>- Не забудьте попробовать лобио в "Tbilisi Street Food". В этом месте готовят уникальную смесь овощей и грибов,
+        что делает каждую порцию непревзойдённо вкусной.</li>
+
+        <li> <strong>Хачапури (тарталетки с сыром) в "Chkondropali"</strong>
+        <br>- В районе Тишиани я попробовал хачапури, которые были сверху золотистыми и внутри полными вкуса и сочности.
+        Эти тарталетки приготовлены с использованием сыра и специй, которые оставили на языке приятное послевкусие.</li>
+    </ul>
+
+    <h3 id="section3">Впечатления и советы</h3>
+    <ul>
+        <li><strong>Знайте свои места</strong>
+        <br>- Чтобы найти лучшие кулинарные места в Тбилиси, нужно знать свои адреса. Некоторые из лучших заведений
+            находятся за пределами популярных туристических маршрутов.</li>
+
+        <li><strong>Время — деньги</strong>
+        <br>- Время приготовления блюд на местах часто стоит больше обычного. Не торопитесь и дайте себе возможность
+            насладиться процессом!</li>
+
+        <li><strong>Используйте карты и рекомендации</strong>
+        <br>- Начните с поиска местных рекомендаций. Карта от TripAdvisor или Yelp может предложить несколько интересных
+            вариантов.</li>
+    </ul>
+<script src="script.js"></script>
+<!-- Подвал сайта -->
+<footer>
+    <h4><p>© 2024 Мир вдохновения | Свяжитесь с нами через <a href="contact.html">Контактную форму</a>.</p></h4>
+</footer>
+<script>
+    // Функция Google Translate
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            { pageLanguage: 'ru', includedLanguages: 'en,fr,es,de,it,zh-CN,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+            'google_translate_element'
+        );
+    }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+   <script> document.documentElement.style.scrollBehavior = 'smooth';
+</script>
+</body>
+</html>

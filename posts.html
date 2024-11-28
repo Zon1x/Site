@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Указываем кодировку страницы для правильного отображения символов -->
+    <meta charset="UTF-8">
+    <!-- Устанавливаем адаптивность страницы, чтобы она корректно отображалась на мобильных устройствах -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Посты</title>
+
+    <!-- Подключаем внешний файл стилей для оформления страницы -->
+    <link rel="stylesheet" href="style.post.css">
+
+    <!-- Исправлена ошибка: используем правильный атрибут rel для скриптов -->
+    <link rel="scriptsheet" href="script.js">  <!-- Подключаем внешний файл скриптов -->
+</head>
+<body>
+<!-- Верхняя часть страницы: заголовок и навигационное меню -->
+<header>
+    <!-- Заголовок страницы -->
+    <h1>Посты</h1>
+
+    <!-- Навигационное меню со ссылками на другие страницы -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">Обо мне</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- Виджет Google Translate для перевода страницы на другие языки -->
+    <div id="google_translate_element"></div>
+
+</header>
+
+<!-- Секция для отображения постов блога -->
+<section id="blog-posts" class="blog-posts">
+    <!-- Здесь будут динамически добавляться посты через JavaScript -->
+</section>
+
+<!-- Подключаем скрипт для работы с блогом -->
+<script src="script.js"></script>
+
+<!-- Подключаем библиотеку Google Translate для работы виджета -->
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- Нижняя часть страницы: информация о сайте и контактные данные -->
+<footer>
+    <!-- Текст в подвале страницы со ссылкой на контактную форму -->
+    <h4>
+        <p>© 2024 Мир вдохновения | Свяжитесь с нами через <a href="contact.html">Контактную форму</a>.</p>
+    </h4>
+</footer>
+<script>
+    // Функция Google Translate
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            { pageLanguage: 'ru', includedLanguages: 'en,fr,es,de,it,zh-CN,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+            'google_translate_element'
+        );
+    }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

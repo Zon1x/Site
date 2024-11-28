@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Личный блог о путешествиях, кулинарии и саморазвитии">
+    <meta name="keywords" content="блог, путешествия, кулинария, рецепты, саморазвитие">
+    <title>Мир вдохновения</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="scriptsheet" href="script.js">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <h1>Мир гастрономических приключений и уникальных путешествий!</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="posts.html">Посты</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="google_translate_element"></div>
+</header>
+<!-- Основной контент -->
+<main>
+    <section class="cards" id="dynamic-content">
+        <!-- Статьи добавляются динамически через script.js -->
+    </section>
+
+    <section id="intro">
+        <h2>О блоге</h2>
+        <p>В моем блоге я делюсь не только впечатлениями от поездок, но и погружаю вас в мир вкусов, которые можно найти в самых разных уголках планеты.<br> От древних улочек Тбилиси до современных ресторанов Барселоны — каждый город несет свою кулинарную историю и неповторимые традиции.</p>
+        <h3><p><a href="about.html">Узнать больше обо мне</a></p></h3>
+    </section>
+
+    <section id="highlighted-posts">
+        <h2>Популярные посты</h2>
+        <p>Не только Эйфелева башня, но и вкусы французской кухни. Париж.</p>
+        <p>Дагестан пленяет не только своей природой, но и кухней</p>
+        <p>Город ярких красок, где средиземноморский стиль жизни сочетается с современной архитектурой. Барселона.</p>
+        <p>Город контрастов, где традиции встречаются с современностью. Токио.</p>
+        <p>Страна, где природа вдохновляет, а кухня удивляет. Норвегия.</p>
+        <p>Тбилиси встречает гостей не только древними улочками, но и вкуснейшей кухней.</p>
+        <p>Место, где кулинарные традиции переплетаются с культурным наследием. Мехико.</p>
+        <p>Город, где каждый уголок пропитан историей, а кухня дарит тепло и уют. Прага.</p>
+        <ul class="highlighted-list">
+        </ul>
+        <h3><p><a href="posts.html">Перейти к списку всех постов</a></p></h3>
+    </section>
+</main>
+
+<footer>
+    <h4><p>© 2024 Мир вдохновения | Свяжитесь с нами через <a href="contact.html">Контактную форму</a>.</p></h4>
+</footer>
+
+<!-- Скрипты -->
+<script>
+    // Функция Google Translate
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            { pageLanguage: 'ru', includedLanguages: 'en,fr,es,de,it,zh-CN,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+            'google_translate_element'
+        );
+    }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

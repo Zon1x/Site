@@ -1,0 +1,408 @@
+/* === Общие стили === */
+body {
+    font-family: 'Oswald' ,serif;
+    background-color: #f4e7d3;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+h1 a, h2 a, h3 a, h5 a, h6 a {
+    color: #333333; /* Цвет текста */
+    text-decoration: none; /* Убирает подчёркивание */
+}
+h4 a {
+    color: #f4e7d3; /* Цвет текста */
+    text-decoration: none; /* Убирает подчёркивание */
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    text-decoration: underline; /* Подчёркивание при наведении */
+}
+/* Контейнер для постов */
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет перенос карточек на следующую строку, если они не помещаются */
+    gap: 20px; /* Расстояние между карточками */
+    justify-content: center; /* Центровка карточек */
+    padding: 20px;
+}
+
+/* Карточки постов */
+.post {
+    background-color: #f4e7d3;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Фиксированная ширина карточек */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Изображения карточек */
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+/* === Шапка сайта === */
+header {
+    background-color: #6b2a2a;
+    color: #f4e7d3;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* === Навигация === */
+nav ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #6b2a2a;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    color: #f4e7d3;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1f3c5d;
+    text-decoration: underline;
+}
+
+/* === Карточки контента === */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #6b2a2a;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* === Галерея изображений === */
+.gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* === Кнопка "Наверх" === */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #1f3c5d;
+    color: #f4e7d3;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+    transform: scale(1.2);
+    background-color: #6b2a2a;
+}
+
+/* === Анимация появления === */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+h2 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+}
+/* Стили изображений постов */
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Карточки постов */
+.post {
+    animation: fadeIn 1s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Кнопка "Читать дальше" */
+.read-more {
+    color: #f4e7d3;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #6b2a2a;
+}
+/* Стили ссылок в заголовках */
+a.title-link {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.title-link:hover {
+    color: #6b2a2a; /* Оранжевый цвет при наведении */
+    text-decoration: underline;
+    transition: color 0.3s ease; /* Плавный переход цвета */
+}
+/* Стилизация контейнера формы для лучшего выравнивания */
+#contact {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #f4e7d3;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* Улучшение заголовков формы */
+#contact h2 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Стилизация меток для улучшения читаемости */
+#contact form label {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+/* Удобное оформление для полей ввода */
+#contact form input,
+#contact form textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #f4e7d3;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 100%; /* Делаем поля ввода на всю ширину */
+    box-sizing: border-box; /* Учитываем padding при расчете ширины */
+}
+
+/* Улучшение стиля кнопки */
+#contact form button {
+    background-color: #6b2a2a;
+    color: #f4e7d3;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #1f3c5d;
+}
+
+/* Добавление анимации для ссылок */
+.contact-info a {
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #1f3c5d;
+    text-decoration: underline;
+}
+
+/* Блок с контактной информацией */
+.contact-info {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.contact-info h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Стилизация футера */
+footer {
+    background-color: #333333;
+    color: #f4e7d3;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Добавление мобильной адаптивности для форм */
+@media (max-width: 600px) {
+    #contact {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    #contact h2 {
+        font-size: 20px;
+    }
+
+    #contact form input,
+    #contact form textarea {
+        font-size: 14px;
+    }
+
+    #contact form button {
+        font-size: 16px;
+    }
+}
+/* === Подвал сайта === */
+footer {
+    background-color: #6b2a2a;
+    color: #f4e7d3;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer-links a {
+    color: #f4e7d3;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    font-size: 14px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f4e7d3;
+}
+
+.footer-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #f4e7d3;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.footer-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/* Стили контейнера */
+.carousel-container {
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden; /* Скрытие лишних фото */
+    border: 5px solid #ddd; /* Рамка */
+    border-radius: 10px; /* Скругление углов */
+}
+
+/* Стили для самого слайдера */
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Плавный переход */
+}
+
+/* Стили для каждой фотографии */
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Стили для кнопок перелистывания */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+html {
+    scroll-behavior: smooth;
+}
+section {
+    height: auto;
+    padding: 1px;
+}
